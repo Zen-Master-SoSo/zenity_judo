@@ -47,7 +47,7 @@ class _Command:
 		args = ["--" + type(self).__name__.lower().translate(TR)]
 		for k in keys:
 			args.append("--" + k.translate(TR))
-			args.append(self.__dict__[k])
+			args.append(str(self.__dict__[k]))
 		return args
 
 
@@ -233,12 +233,15 @@ if __name__ == '__main__':
 	elif options.text_info:
 		c = Text_Info()
 		c.filename = os.path.join(os.path.dirname(__file__), 'man-zenity.txt')
+		c.width = 600
+		c.height = 800
 	elif options.warning:
 		c = Warning()
 	elif options.scale:
 		c = Scale()
 	elif options.color_selection:
 		c = Color_Selection()
+		c.show_palette = True
 	elif options.password:
 		c = Password()
 	elif options.forms:
