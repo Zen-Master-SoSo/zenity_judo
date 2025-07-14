@@ -202,9 +202,8 @@ if __name__ == '__main__':
 	p.add_argument("--verbose", "-v", action="store_true")
 	options = p.parse_args()
 	logging.basicConfig(
-		stream=sys.stdout,
-		level=logging.DEBUG if options.verbose else logging.ERROR,
-		format="[%(filename)24s:%(lineno)3d] %(message)s"
+		level = logging.DEBUG if options.verbose else logging.ERROR,
+		format = "[%(filename)24s:%(lineno)3d] %(message)s"
 	)
 
 	if options.calendar:
