@@ -21,7 +21,7 @@
 A command line test/demo for the python zenity wrapper.
 """
 import argparse, sys, os, logging
-from zenity import (
+from zenity_judo import (
 	Calendar,
 	Entry,
 	Error,
