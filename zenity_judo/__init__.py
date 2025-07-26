@@ -64,7 +64,7 @@ Pick a color:
 from subprocess import run, CalledProcessError
 from os import linesep as ls
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 TR = {ord("_"): ord("-")}
 
 class _ZenityCommand:
