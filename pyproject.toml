@@ -7,7 +7,15 @@ name = "zenity_judo"
 authors = [{name = "Leon Dionne", email = "ldionne@dridesign.sh.cn"}]
 readme = "README.md"
 license = {file = "LICENSE"}
-classifiers = ["License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)"]
+classifiers = [
+	"License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+	"Development Status :: 3 - Alpha",
+	"Environment :: X11 Applications :: GTK",
+	"Operating System :: POSIX :: Linux",
+	"Programming Language :: Python :: 3",
+	"Topic :: Desktop Environment",
+	"Topic :: Desktop Environment :: Gnome"
+]
 dynamic = ["version", "description"]
 
 [project.urls]
